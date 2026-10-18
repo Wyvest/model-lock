@@ -9,19 +9,14 @@ The plugin hook can't stop a subagent that picks its own model, or Claude Code's
 
 ## Install
 
-At the prompt of a terminal session:
-
-```
-/plugin install model-lock --marketplace Wyvest/model-lock
-```
-
 From a shell:
 
 ```bash
-claude plugin install model-lock --marketplace Wyvest/model-lock
+claude plugin marketplace add Wyvest/model-lock
+claude plugin install model-lock@model-lock
 ```
 
-Answer `y` to add the marketplace, then pick the **user** scope. In the desktop app, where `/plugin` doesn't run: click **+** next to the prompt box, then **Plugins**, **Add marketplace** with `Wyvest/model-lock`, then **Add plugin**.
+Or at the prompt of a terminal session: `/plugin marketplace add Wyvest/model-lock`, then `/plugin install model-lock@model-lock`. In the desktop app, where `/plugin` doesn't run: click **+** next to the prompt box, then **Plugins**, **Add marketplace** with `Wyvest/model-lock`, then **Add plugin**.
 
 If the repository is private, the machine needs a git credential for github.com (an SSH key, or `gh auth login` then `gh auth setup-git`). The install never asks for one.
 
