@@ -1,0 +1,8 @@
+{
+  "name": "model-lock",
+  "version": "0.1.0",
+  "description": "Keeps Claude Code on Opus 5.5, Sonnet 5.5 and Haiku 5.5: blocks other model switches and checks every device has the managed-settings allowlist installed.",
+  "author": {
+    "name": "Wyvest"
+  }
+}

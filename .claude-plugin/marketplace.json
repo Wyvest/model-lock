@@ -1,0 +1,13 @@
+{
+  "name": "model-lock",
+  "description": "Keeps Claude Code on Opus 5.5, Sonnet 5.5 and Haiku 5.5.",
+  "owner": {
+    "name": "Wyvest"
+  },
+  "plugins": [
+    {
+      "name": "model-lock",
+      "source": "./"
+    }
+  ]
+}
